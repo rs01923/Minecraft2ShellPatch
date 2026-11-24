@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.rhys.mixin.client",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "TrueTypeGlyphProviderMixin",
+    "NativeImageMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

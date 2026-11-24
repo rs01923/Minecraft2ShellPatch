@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "minecraft2shellpatch",
+  "version": "${version}",
+  "name": "Minecraft2ShellPatch",
+  "description": "Client-side mitigation for minecraft2shell",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.rhys.client.ModClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "minecraft2shellpatch.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}",
+    "java": ">=25"
+  }
+}

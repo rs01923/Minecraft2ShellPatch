@@ -1,0 +1,13 @@
+package me.rhys.client;
+
+import net.fabricmc.api.ClientModInitializer;
+import org.slf4j.LoggerFactory;
+
+public class ModClient implements ClientModInitializer {
+
+    @Override
+    public void onInitializeClient() {
+        LoggerFactory.getLogger("minecraft2shellpatch").info(
+                "Minecraft2ShellPatch active: TrueType font hinting is disabled; TTF rendering remains enabled.");
+    }
+}
